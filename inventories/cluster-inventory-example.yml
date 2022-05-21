@@ -1,24 +1,24 @@
 plugin: ocmplus.cm.ocm_managedcluster
 cluster_groups:
-- name: amazon
+- name: Amazon
   label_selectors:
   - cloud=Amazon
   - name!=local-cluster
-- name: azure
+- name: Azure
   label_selectors:
   - cloud=Azure
   - name!=local-cluster
-- name: vmware
+- name: VMware
   label_selectors:
   - cloud=VMWare
   - name!=local-cluster
-- name: baremetal
+- name: Baremetal
   label_selectors:
   - cloud=BareMetal
   - name!=local-cluster
-- name: kind-clusters
+- name: Kind-Clusters
   label_selectors:
   - name=kind-cluster
-- name: all-managed-clusters
+- name: All-Managed-Clusters
   label_selectors:
   - name!=local-cluster
