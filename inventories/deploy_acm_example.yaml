@@ -2,6 +2,9 @@ plugin: kubernetes.core
 cluster_groups:
 - name: Hub
   label_selectors:
-- name: Hub-Clusters
+  - cloud=Amazon
+  - name=local-cluster
+- name: Azure
   label_selectors:
+  - cloud=Azure
   - name=local-cluster
