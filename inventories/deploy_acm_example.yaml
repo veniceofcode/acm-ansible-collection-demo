@@ -1,0 +1,7 @@
+plugin: ocmplus.cm.ocm_managedcluster
+cluster_groups:
+- name: Hub
+  label_selectors:
+- name: Hub-Clusters
+  label_selectors:
+  - name=local-cluster
