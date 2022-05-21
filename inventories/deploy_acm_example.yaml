@@ -1,10 +1,24 @@
-plugin: kubernetes.core
+plugin: ocmplus.cm.ocm_managedcluster
 cluster_groups:
-- name: Hub
+- name: Amazon
   label_selectors:
   - cloud=Amazon
-  - name=local-cluster
+  - name!=local-cluster
 - name: Azure
   label_selectors:
   - cloud=Azure
-  - name=local-cluster
+  - name!=local-cluster
+- name: VMware
+  label_selectors:
+  - cloud=VMWare
+  - name!=local-cluster
+- name: Baremetal
+  label_selectors:
+  - cloud=BareMetal
+  - name!=local-cluster
+- name: Kind-Clusters
+  label_selectors:
+  - name=kind-cluster
+- name: All-Managed-Clusters
+  label_selectors:
+  - name!=local-cluster
