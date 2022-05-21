@@ -1,4 +1,4 @@
-plugin: ocmplus.cm.ocm_managedcluster
+plugin: kubernetes.core
 cluster_groups:
 - name: Hub
   label_selectors:
