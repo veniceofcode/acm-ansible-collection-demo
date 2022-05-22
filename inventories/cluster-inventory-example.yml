@@ -22,6 +22,3 @@ cluster_groups:
 - name: All-Managed-Clusters
   label_selectors:
   - name!=local-cluster
-- name: Hub Cluster
-  label_selectors:
-  - name=local-cluster
