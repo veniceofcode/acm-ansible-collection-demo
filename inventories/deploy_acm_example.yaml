@@ -1,9 +1,7 @@
-plugin: ocmplus.cm.ocm_managedcluster
 cluster_groups:
-- name: Amazon
+- name: RHACM Hub Cluster
   label_selectors:
-  - cloud=Amazon
-  - name!=local-cluster
+  - name=local-cluster
 - name: Azure
   label_selectors:
   - cloud=Azure
